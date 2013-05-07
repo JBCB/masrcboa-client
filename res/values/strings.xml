@@ -9,5 +9,12 @@
     <string name="bottom_item_diary">日志</string>
     <string name="bottom_item_announce">公告</string>
     <string name="bottom_item_mail">站内邮箱</string>
+    <string name="filter_item_all">全部的</string>
+    <string name="filter_item_today">当天的</string>
+    <string name="filter_item_week">一星期的</string>
+    <string name="filter_item_month">一个月的</string>
+    <string name="filter_item_quarter">一季度的</string>
+    <string name="filter_item_halfyear">半年的</string>
+    <string name="filter_item_year">一年的</string>
 
 </resources>
