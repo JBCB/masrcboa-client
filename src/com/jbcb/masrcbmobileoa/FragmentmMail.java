@@ -18,12 +18,12 @@ import android.widget.ProgressBar;
  * 
  * @see http://stackoverflow.com/questions/7016632/unable-to-instantiate-fragment
  * */
-public class Fragmentmail extends Fragment
+public class FragmentmMail extends Fragment
 {
 	private Button btn_refresh;
 	private ProgressBar progressBar_refresh;
 
-	public Fragmentmail()
+	public FragmentmMail()
 	{
 	}
 	

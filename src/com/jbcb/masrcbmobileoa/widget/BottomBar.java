@@ -75,24 +75,9 @@ public class BottomBar extends LinearLayout implements OnClickListener
 	public void onClick(View v)
 	{
 		int tag = (Integer)v.getTag();
-		switch (tag) 
-		{
-			case TAG_0:
-				setNormalState(lastButton);
-				setSelectedState(tag);
-				break;
-			case TAG_1:
-				setNormalState(lastButton);
-				setSelectedState(tag);
-				break;
-			case TAG_2:
-				setNormalState(lastButton);
-				setSelectedState(tag);
-				break;
-		}
+		onItemChangedListener.onItemChanged(tag);
 	}
 	
-	private int lastButton = -1;
 	/**
 	 * set the default bar item of selected
 	 * 
@@ -108,8 +93,6 @@ public class BottomBar extends LinearLayout implements OnClickListener
 				throw new RuntimeException("the value of default bar item can not bigger than string array's length");
 			}
 			itemList.get(index).setSelected(true);
-			onItemChangedListener.onItemChanged(index);
-			lastButton = index;
 		}
 	}
 	
@@ -119,7 +102,7 @@ public class BottomBar extends LinearLayout implements OnClickListener
 	 * »Ö¸´Î´Ñ¡ÖÐ×´Ì¬
 	 * 
 	 * */
-	private void setNormalState(int index)
+	public void setNormalState(int index)
 	{
 		if(index != -1)
 		{

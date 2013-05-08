@@ -23,6 +23,7 @@
         </com.jbcb.masrcbmobileoa.widget.FilterImageButton>
 
         <TextView
+            android:id="@+id/frag_diary_tv_title"
             android:layout_width="wrap_content"
             android:layout_height="fill_parent"
             android:layout_centerInParent="true"
@@ -42,6 +43,7 @@
     </RelativeLayout>
 
     <TextView
+        android:id="@+id/frag_diary_tv_content"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"
