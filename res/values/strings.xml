@@ -16,5 +16,10 @@
     <string name="filter_item_quarter">一季度的</string>
     <string name="filter_item_halfyear">半年的</string>
     <string name="filter_item_year">一年的</string>
+    <string name="mail_item_new">新邮件</string>
+    <string name="mail_item_reveive">收件箱</string>
+    <string name="mail_item_send">发件箱</string>
+    <string name="mail_item_draft">草稿箱</string>
+    <string name="mail_item_recycle">回收站</string>
 
 </resources>

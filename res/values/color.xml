@@ -5,4 +5,6 @@
     <color name="title_button_color_gray">#e5e9ec</color>
     <color name="text_blue">#3F96F3</color>
     <color name="text_black">#000000</color>
+    <color name="mailitem_blue">#3F96F3</color>
+    <color name="mailitem_black">#000000</color>
 </resources>
