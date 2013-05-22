@@ -27,7 +27,7 @@
             android:layout_height="fill_parent"
             android:layout_centerInParent="true"
             android:gravity="center_vertical"
-            android:text="@string/bottom_item_announce"
+            android:text="@string/header_title_announce"
             android:textColor="@color/text_blue"
             android:textSize="20sp" />
 
@@ -51,12 +51,12 @@
             android:gravity="center_vertical" />
     </RelativeLayout>
 
-    <TextView
-        android:id="@+id/frag_announce_tv_content"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="@string/bottom_item_announce"
-        android:textSize="30sp" />
+    <LinearLayout
+        android:id="@+id/frag_announce_ll_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/frag_announce_rl_title"
+        android:background="#ffffff">
+    </LinearLayout>
 
 </RelativeLayout>

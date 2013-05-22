@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/activity_announcedetail_rl_title"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:background="#d9eaf6" >
+
+        <Button
+            android:id="@+id/activity_announcedetail_btn_back"
+            android:layout_width="70dip"
+            android:layout_height="40dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/header_btn_back" />
+
+        <TextView
+            android:id="@+id/activity_announcedetail_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical"
+            android:text="@string/header_title_announce_detail"
+            android:textColor="@color/text_blue"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/activity_announce_ll_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/activity_announcedetail_rl_title"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/activity_announcedetail_tv_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textColor="@color/text_blue"
+            android:textIsSelectable="false"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

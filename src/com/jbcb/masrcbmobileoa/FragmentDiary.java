@@ -6,6 +6,7 @@ import com.jbcb.masrcbmobileoa.widget.FilterPopMenu.OnItemClickListener;
 import com.jbcb.masrcbmobileoa.widget.FilterPopMenu.OnPopMenuDismissListener;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -26,6 +27,7 @@ public class FragmentDiary extends Fragment
 {
 	private FilterImageButton btn_filter;
 	private FilterPopMenu pop_menu;
+	private Button btn_new;
 	
 	private String filterItem_All;
 	private String filterItem_Today;
@@ -51,17 +53,15 @@ public class FragmentDiary extends Fragment
         }
 		LayoutInflater myInflater = (LayoutInflater)getActivity().getSystemService(Context.LAYOUT_INFLATER_SERVICE);  
 	    View layout = myInflater.inflate(R.layout.activity_diary, container, false);
+		
+	    // init the mail items
+	    initHeader(layout);
 	    
-	    Button btn_new = (Button)layout.findViewById(R.id.frag_diary_btn_new);
-	    btn_new.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-			}
-		});
-	    
-		filterItem_All = getResources().getString(R.string.filter_item_all);
+		return layout;
+	}
+	
+	private void initHeader(View layout) {
+	    filterItem_All = getResources().getString(R.string.filter_item_all);
 		filterItem_Today = getResources().getString(R.string.filter_item_today);
 		filterItem_Week = getResources().getString(R.string.filter_item_week);
 		filterItem_Month = getResources().getString(R.string.filter_item_month);
@@ -100,8 +100,17 @@ public class FragmentDiary extends Fragment
 				pop_menu.showAsDropDown(v);
 			}
 		});
-		
-		return layout;
+	    
+	    btn_new = (Button)layout.findViewById(R.id.frag_diary_btn_new);
+	    btn_new.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+		        Intent intent = new Intent();
+		        intent.setClass(getActivity(), DiaryNewActivity.class);
+		        getActivity().startActivity(intent);
+			}
+		});
 	}
 	
 	private String getFilterValue(int index) {

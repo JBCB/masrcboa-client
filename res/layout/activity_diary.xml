@@ -28,7 +28,7 @@
             android:layout_height="fill_parent"
             android:layout_centerInParent="true"
             android:gravity="center_vertical"
-            android:text="@string/bottom_item_diary"
+            android:text="@string/header_title_diary"
             android:textColor="@color/text_blue"
             android:textSize="20sp" />
 

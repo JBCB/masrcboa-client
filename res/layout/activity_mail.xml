@@ -25,7 +25,7 @@
             android:layout_height="fill_parent"
             android:layout_centerInParent="true"
             android:gravity="center_vertical"
-            android:text="@string/bottom_item_mail"
+            android:text="@string/header_title_mail"
             android:textColor="@color/text_blue"
             android:textSize="20sp" />
 
@@ -67,10 +67,30 @@
             android:orientation="horizontal" >
 
             <LinearLayout
+                android:id="@+id/mailitem_new_title_ll"
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:background="#FF7F24"
+                android:gravity="center"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/mailitem_new_title_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#ffffff"
+                    android:textIsSelectable="false"
+                    android:textSize="18sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
                 android:id="@+id/mailitem_receive_title_ll"
                 android:layout_width="108dp"
                 android:layout_height="108dp"
-                android:background="#95FF7F24"
+                android:layout_marginLeft="10dp"
+                android:background="#FF7F24"
                 android:gravity="center"
                 android:orientation="vertical" >
 
@@ -84,13 +104,21 @@
                     android:textSize="18sp" >
                 </TextView>
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
 
             <LinearLayout
                 android:id="@+id/mailitem_send_title_ll"
                 android:layout_width="108dp"
                 android:layout_height="108dp"
-                android:layout_marginLeft="10dp"
-                android:background="#95FF7F24"
+                android:background="#3399ff"
                 android:gravity="center"
                 android:orientation="vertical" >
 
@@ -104,41 +132,13 @@
                     android:textSize="18sp" >
                 </TextView>
             </LinearLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/mailitem_new_title_ll"
-            android:layout_width="108dp"
-            android:layout_height="108dp"
-            android:layout_marginTop="10dp"
-            android:background="#95ff0000"
-            android:gravity="center"
-            android:orientation="vertical" >
-
-            <TextView
-                android:id="@+id/mailitem_new_title_tv"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:textColor="#ffffff"
-                android:textIsSelectable="false"
-                android:textSize="18sp" >
-            </TextView>
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="horizontal" >
 
             <LinearLayout
                 android:id="@+id/mailitem_draft_title_ll"
                 android:layout_width="108dp"
                 android:layout_height="108dp"
-                android:background="#953399ff"
+                android:layout_marginLeft="10dp"
+                android:background="#3399ff"
                 android:gravity="center"
                 android:orientation="vertical" >
 
@@ -152,13 +152,21 @@
                     android:textSize="18sp" >
                 </TextView>
             </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
 
             <LinearLayout
                 android:id="@+id/mailitem_recycle_title_ll"
                 android:layout_width="108dp"
                 android:layout_height="108dp"
-                android:layout_marginLeft="10dp"
-                android:background="#953399ff"
+                android:background="#ff0000"
                 android:gravity="center"
                 android:orientation="vertical" >
 
@@ -168,6 +176,20 @@
                     android:layout_height="wrap_content"
                     android:gravity="center"
                     android:textColor="#ffffff"
+                    android:textIsSelectable="false"
+                    android:textSize="18sp" >
+                </TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="108dp"
+                android:layout_height="108dp"
+                android:layout_marginLeft="10dp" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
                     android:textIsSelectable="false"
                     android:textSize="18sp" >
                 </TextView>
